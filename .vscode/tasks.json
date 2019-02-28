@@ -30,6 +30,42 @@
             "problemMatcher": []
         },
         {
+            "label": "iis:Debug",
+            "type": "shell",
+            "windows": {
+                "command": "${config:build.iisexpress}"
+            },
+            "args": [
+                "/path:\"${workspaceFolder}\\wwwroot\"",
+                "/port:${config:build.debug.port}"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "browse:Debug",
+            "type": "shell",
+            "windows": {
+                "command": "${config:build.browser}"
+            },
+            "args": [
+                "http://localhost:${config:build.debug.port}"
+            ],
+            "presentation": {
+                "reveal": "never"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "launch:Debug",
+            "type": "shell",
+            "group": "build",
+            "problemMatcher": [],
+            "dependsOn": ["iis:Debug", "browse:Debug"]
+        },
+        {
             "label": "build:Release",
             "type": "shell",
             "windows": {
