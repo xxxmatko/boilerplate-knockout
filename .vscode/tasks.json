@@ -10,6 +10,24 @@
 				"panel": "new"
 			},
             "problemMatcher": []
-        }        
+        },
+        {
+            "label": "build:Debug",
+            "type": "shell",
+            "windows": {
+                "command": "grunt"
+            },
+            "args": [
+                "--gruntfile",
+                "'gruntfile.js'",
+                "app-build:Debug",
+                "--color"
+            ],
+            "group": "build",
+            "presentation": {
+				"panel": "new"
+			},
+            "problemMatcher": []
+        }
     ]
 }
