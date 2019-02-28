@@ -80,6 +80,14 @@ module.exports = function (grunt) {
             }]
         },
         config: {
+            options: {
+                process: function (content, srcpath) {
+                    return content
+                        .replace(/\{version\}/g, grunt.config("package").version)
+                        .replace(/\{homepage\}/g, grunt.config("homepage"))
+                        .replace(/\{cacheBust\}/g, new Date().getTime());
+                }
+            },            
             files: [{
                 expand: true,
                 src: ["config.<%= configuration %>.js"],
