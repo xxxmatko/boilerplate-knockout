@@ -3,7 +3,7 @@
         "LICENSE": true,
         "README.md": true,
         ".vscode": true,
-        "node_modules": true
-        //"wwwroot": true,
+        "node_modules": true,
+        "wwwroot": true
     }
 }
