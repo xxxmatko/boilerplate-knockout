@@ -28,6 +28,24 @@
 				"panel": "new"
 			},
             "problemMatcher": []
-        }
+        },
+        {
+            "label": "build:Release",
+            "type": "shell",
+            "windows": {
+                "command": "grunt"
+            },
+            "args": [
+                "--gruntfile",
+                "'gruntfile.js'",
+                "app-build:Release",
+                "--color"
+            ],
+            "group": "build",
+            "presentation": {
+				"panel": "new"
+			},
+            "problemMatcher": []
+        }        
     ]
 }
