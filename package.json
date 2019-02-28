@@ -17,5 +17,14 @@
         "grunt-contrib-requirejs": "1.0.0"
     },
     "dependencies": {
+        "jquery": "3.3.1",
+        "materialize-css": "1.0.0",
+        "requirejs": "2.3.6",
+        "requirejs-text": "2.0.15",
+        "knockout": "3.5.0",
+        "knockout.validation": "2.0.3",
+        "i18next": "15.0.4",
+        "leaflet": "1.4.0",
+        "waypoints": "4.0.1"
     }
 }
