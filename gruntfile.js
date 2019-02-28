@@ -4,7 +4,8 @@ module.exports = function (grunt) {
     grunt.initConfig({
         package: grunt.file.readJSON("package.json"),
         homepage: "<HOMEPAGE>",
-        configuration: "<CONFIGURATION>"
+        configuration: "<CONFIGURATION>",
+        clean: grunt.file.readJSON("tasks/clean.json")
     });
 
     //#endregion
@@ -40,6 +41,7 @@ module.exports = function (grunt) {
 
         // List of tasks
         var tasks = [
+            "clean:wwwroot"
         ];
 
         // Set up dynamic parameters
