@@ -89,6 +89,23 @@ module.exports = function (grunt) {
                     return "wwwroot/js/config.js";
                 }
             }]
+        },
+        index: {
+            options: {
+                process: function (content, srcpath) {
+                    return content
+                        .replace(/\{version\}/g, grunt.config("package").version)
+                        .replace(/\{homepage\}/g, grunt.config("homepage"))
+                        .replace(/\{cacheBust\}/g, new Date().getTime());
+                }
+            },
+            files: [{
+                expand: true,
+                src: ["index.<%= configuration %>.html"],
+                rename: function () {
+                    return "wwwroot/index.html";
+                }
+            }]
         }        
     });
 
