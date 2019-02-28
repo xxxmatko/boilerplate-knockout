@@ -1,5 +1,10 @@
 {
     "wwwroot": [
         "wwwroot/**/*"
+    ],
+    "dependencies": [
+        "js/libs/*",
+        "css/materialize.css",
+        "css/leaflet.css"
     ]
 }

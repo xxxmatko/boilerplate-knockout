@@ -41,7 +41,8 @@ module.exports = function (grunt) {
 
         // List of tasks
         var tasks = [
-            "clean:wwwroot"
+            "clean:wwwroot",
+            "clean:dependencies"
         ];
 
         // Set up dynamic parameters
