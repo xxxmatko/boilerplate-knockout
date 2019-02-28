@@ -30,7 +30,8 @@ module.exports = function (grunt) {
             "copy:js",
             "copy:config",
             "webfont",
-            "less"
+            "less",
+            "csslint"
         ];
 
         // Set up dynamic parameters
