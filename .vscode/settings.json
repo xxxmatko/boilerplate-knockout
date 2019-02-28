@@ -4,6 +4,7 @@
         "README.md": true,
         ".vscode": true,
         "node_modules": true,
-        "wwwroot": true
+        "wwwroot": true,
+        ".gitignore": true
     }
 }
