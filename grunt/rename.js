@@ -8,7 +8,12 @@ module.exports = function (grunt) {
                 { src: ["js/libs/leaflet-src.js"], dest: "js/libs/leaflet.js" },
                 { src: ["js/libs/noframework.waypoints.js"], dest: "js/libs/waypoints.js" }
             ]
-        }     
+        },
+        cssmin: {
+            files: [
+                { src: ["wwwroot/css/site.min.css"], dest: "wwwroot/css/site.css" }
+            ]
+        }
     });
 
     //#endregion

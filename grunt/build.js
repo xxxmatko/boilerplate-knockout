@@ -46,6 +46,13 @@ module.exports = function (grunt) {
             case "RELEASE":
                 grunt.config("configuration", "Release");
                 grunt.config("homepage", "http://localhost:8011/");
+                grunt.config("jshint.options.debug", false);
+
+                tasks.push("cssmin");
+                tasks.push("clean:cssmin");
+                tasks.push("rename:cssmin");
+                tasks.push("requirejs:release");
+                tasks.push("clean:componentshtml");
                 break;
             default:
                 grunt.fail.fatal("Unknown build configuration '" + configuration.toUpperCase() + "'.");

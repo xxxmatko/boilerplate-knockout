@@ -13,6 +13,13 @@ module.exports = function (grunt) {
         css: [
             "wwwroot/css/*",
             "!wwwroot/css/site.css"
+        ],
+        cssmin: [
+            "wwwroot/css/*",
+            "!wwwroot/css/site.min.css"
+        ],
+        componentshtml: [
+            "wwwroot/js/components/**/*.html"
         ]
     });
 
