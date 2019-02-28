@@ -15,6 +15,6 @@ define([
     $(function () {
         ko.applyBindings({
             lang: i18n.language
-        });
+        }, document.body);
     });
 });
