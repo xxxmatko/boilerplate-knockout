@@ -9,7 +9,11 @@ module.exports = function (grunt) {
             "js/libs/*",
             "css/materialize.css",
             "css/leaflet.css"
-        ]        
+        ],
+        css: [
+            "wwwroot/css/*",
+            "!wwwroot/css/site.css"
+        ]
     });
 
     //#endregion
