@@ -78,6 +78,17 @@ module.exports = function (grunt) {
                 dest: "wwwroot/js/",
                 filter: "isFile"
             }]
+        },
+        config: {
+            files: [{
+                expand: true,
+                src: ["config.<%= configuration %>.js"],
+                cwd: "js/",
+                filter: "isFile",
+                rename: function () {
+                    return "wwwroot/js/config.js";
+                }
+            }]
         }        
     });
 

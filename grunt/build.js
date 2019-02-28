@@ -27,7 +27,8 @@ module.exports = function (grunt) {
             "jshint",
             "copy:img",
             "copy:css",
-            "copy:js"
+            "copy:js",
+            "copy:config"
         ];
 
         // Set up dynamic parameters
