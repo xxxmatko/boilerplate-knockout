@@ -52,7 +52,7 @@ module.exports = function (grunt) {
                 tasks.push("clean:cssmin");
                 tasks.push("rename:cssmin");
                 tasks.push("requirejs:release");
-                tasks.push("clean:componentshtml");
+                tasks.push("clean:components");
                 break;
             default:
                 grunt.fail.fatal("Unknown build configuration '" + configuration.toUpperCase() + "'.");

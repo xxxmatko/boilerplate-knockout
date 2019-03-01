@@ -82,6 +82,42 @@
 				"panel": "new"
 			},
             "problemMatcher": []
-        }        
+        },
+        {
+            "label": "iis:Release",
+            "type": "shell",
+            "windows": {
+                "command": "${config:build.iisexpress}"
+            },
+            "args": [
+                "/path:\"${workspaceFolder}\\wwwroot\"",
+                "/port:${config:build.release.port}"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "browse:Release",
+            "type": "shell",
+            "windows": {
+                "command": "${config:build.browser}"
+            },
+            "args": [
+                "http://localhost:${config:build.release.port}"
+            ],
+            "presentation": {
+                "reveal": "never"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "launch:Release",
+            "type": "shell",
+            "group": "build",
+            "problemMatcher": [],
+            "dependsOn": ["iis:Release", "browse:Release"]
+        },        
     ]
 }

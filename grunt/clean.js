@@ -18,8 +18,8 @@ module.exports = function (grunt) {
             "wwwroot/css/*",
             "!wwwroot/css/site.min.css"
         ],
-        componentshtml: [
-            "wwwroot/js/components/**/*.html"
+        components: [
+            "wwwroot/js/components"
         ]
     });
 
