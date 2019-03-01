@@ -8,8 +8,8 @@ module.exports = function (grunt) {
         },
         src: {
             files: {
-                "wwwroot/css/site.css": "less/site.less"
-                //"wwwroot/css/components/app.css": "js/components/app/app.less",
+                "wwwroot/css/site.css": "less/site.less",
+                "wwwroot/css/components/app.css": "js/components/app/app.less"
             }
         }     
     });
