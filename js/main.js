@@ -46,7 +46,7 @@ define([
     ready(function () {
         ko.applyBindings({
             lang: i18n.language
-        }, document.body);
+        }, doc.body);
     });
 
     //#endregion
