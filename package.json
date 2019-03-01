@@ -24,7 +24,6 @@
         "knockout": "3.5.0",
         "knockout.validation": "2.0.3",
         "i18next": "15.0.4",
-        "leaflet": "1.4.0",
-        "waypoints": "4.0.1"
+        "leaflet": "1.4.0"
     }
 }

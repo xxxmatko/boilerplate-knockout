@@ -14,13 +14,7 @@ require({
         "knockout.validation": "/js/libs/knockout.validation",
         "materialize": "/js/libs/materialize",
         "text": "/js/libs/text",
-        "leaflet": "/js/libs/leaflet",
-        "waypoints": "/js/libs/waypoints"
-    },
-    shim: {
-        "waypoints": {
-            exports: "Waypoint"
-        }
+        "leaflet": "/js/libs/leaflet"
     },
     config: {
         "my/i18n": {

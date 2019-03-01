@@ -5,8 +5,7 @@ module.exports = function (grunt) {
         dependencies: {
             files: [
                 { src: ["js/libs/knockout-latest.debug.js"], dest: "js/libs/knockout.js" },
-                { src: ["js/libs/leaflet-src.js"], dest: "js/libs/leaflet.js" },
-                { src: ["js/libs/noframework.waypoints.js"], dest: "js/libs/waypoints.js" }
+                { src: ["js/libs/leaflet-src.js"], dest: "js/libs/leaflet.js" }
             ]
         },
         cssmin: {

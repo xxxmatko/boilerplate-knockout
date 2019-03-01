@@ -35,8 +35,7 @@ module.exports = function (grunt) {
                     "knockout/build/output/knockout-latest.debug.js",
                     "knockout.validation/dist/knockout.validation.js",
                     "i18next/dist/umd/i18next.js",
-                    "leaflet/dist/leaflet-src.js",
-                    "waypoints/lib/noframework.waypoints.js"
+                    "leaflet/dist/leaflet-src.js"
                 ],
                 dest: "js/libs/",
                 filter: "isFile"
