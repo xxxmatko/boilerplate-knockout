@@ -15,3 +15,8 @@ To use this boilerplate complete the steps described in the rest of this page.
 1. If you want to run the project, you need to install the **IIS Express** and configure the path to it in the *Workspace Settings* by modifying the setting `build.iisexpress`.
 1. When you run the project using the `launch:Debug` task, it will open the application using the browser specified by the `build.browser` workspace setting.
 1. The port can be modified by changing the `build.debug.port` workspace setting.
+
+## Prerequisites
+Install `fontforge`.
+* Download and install [fontforge](http://fontforge.github.io/en-US/downloads/windows/).
+* Add `C:\Program Files (x86)\FontForgeBuilds\bin` to your `PATH` environment variable.
